@@ -1,0 +1,194 @@
+/* Genel Sıfırlama ve Font Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Arka Planın Komple Boyanması */
+body {
+    background-color: #341504; /* Tasarımdaki ana koyu kahve */
+    color: #D2AF8E; /* Bej metin rengi */
+    display: flex;
+    justify-content: center;
+}
+
+/* 2. Ana Kapsayıcı: 1000px Sabit Genişlik */
+.main-container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Header: Logo ve Menü Yan Yana tasarım. */
+header {
+    width: 100%;
+    margin-top: 145px; /* Üst boşluk 145px  */
+    display: flex;
+    justify-content: space-between; /* Logo sola, menü sağa yaslanır */
+    align-items: flex-end; /* Alt çizgide hizalanırlar */
+    padding-bottom: 5px; /* Menü alt boşluğu 5px  */
+}
+
+/* Logo Alanı: 250px*200px  */
+.logo-area {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-area img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Menü Tasarımı ve Animasyonu */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    border-left: 1px solid #D2AF8E; /* Menü elemanları arasındaki dik çizgiler */
+}
+
+nav ul li:first-child {
+    border-left: none; /* İlk elemanın solunda çizgi olmaz */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D2AF8E;
+    width: 150px; /* Menü elemanı genişliği 150px  */
+    height: 50px; /* Menü elemanı yüksekliği 50px  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Yumuşak animasyon geçişi */
+}
+
+/* Fare üzerine gelince (Hover) rengin değişmesi - Kutucuk sabit değil dinamik */
+nav ul li a:hover {
+    background-color: #D2AF8E; /* Arka plan bej olur */
+    color: #341504; /* Yazı koyu kahve olur */
+}
+
+/* 4. Ana Banner Bölümü: 1000px*460px  */
+.hero-banner {
+    width: 1000px;
+    height: 460px;
+    margin-top: 40px; /* Boşluk 40px  */
+}
+
+.banner-frame {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #D2AF8E; /* Çerçeve 5px */
+}
+
+.banner-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 5. İçerik Satırları: 340px*260px Resimler */
+.content-row {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px; /* Boşluk 40px */
+}
+
+.side-img {
+    width: 340px;
+    height: 260px;
+    border: 3px solid #D2AF8E;
+}
+
+.text-block {
+    width: 650px; /* Yazı ile resim arası 10px boşluk bırakır. */
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* 6. Üçlü Kartlar Bölümü: 310px*210px */
+.cards-section {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Boşluk 20px */
+}
+
+.card {
+    width: 310px;
+}
+
+.card img {
+    width: 310px;
+    height: 210px;
+    border: 3px solid #D2AF8E;
+}
+
+.card h3 {
+    width: 310px;
+    height: 60px; /* Yazı alanı 310px*60px */
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* 7. Footer: 1000px*235px */
+/* FOOTER ANA YAPI */
+.footer-container {
+    width: 1000px; /* Sabit genişlik  */
+    height: 235px; /* Sabit yükseklik  */
+    margin-top: 10px; /* Boşluk 10px [cite: 40] */
+    border: 2px solid #D2AF8E; /* Screenshot_8'deki dış çerçeve */
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Kolonları iki yana yaslar */
+}
+
+/* LİSTE BAŞINDAKİ NOKTALARI KALDIRMA */
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-col ul {
+    list-style: none; /* Noktaları tamamen kaldırır */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    font-size: 14px;
+    margin-bottom: 8px; /* Satır arası boşluk */
+    color: #D2AF8E;
+}
+
+/* SOSYAL MEDYA İKONLARI VE METİN HİZALAMA */
+.social-links li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* İkon ve yazı arası boşluk */
+}
+
+.social-links i {
+    width: 20px;
+    height: 20px;
+}
